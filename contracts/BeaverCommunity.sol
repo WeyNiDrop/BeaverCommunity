@@ -237,7 +237,7 @@ contract BeaverCommunity is IBeaverCommunity, AccessControlUpgradeable, Reentran
 
     function batchWithdrawRewards(uint256[] calldata lodges) external nonReentrant{
         uint256[] memory rewardsArray = new uint256[](lodges.length);
-        for (uint i = 0; i < lodges.length; i++) {
+        for (uint i = 0; i < lodges.length; ++i) {
             rewardsArray[i] = _withdrawRewards(lodges[i]);
         }
         emit BatchWithdrawRewards(lodges, rewardsArray, _msgSender());
@@ -268,7 +268,7 @@ contract BeaverCommunity is IBeaverCommunity, AccessControlUpgradeable, Reentran
 
     function batchWithdrawRoyalties(uint256[] calldata lodges) external nonReentrant{
         uint256[] memory royaltiesArray = new uint256[](lodges.length);
-        for (uint i = 0; i < lodges.length; i++) {
+        for (uint i = 0; i < lodges.length; ++i) {
             royaltiesArray[i] = _withdrawRoyalties(lodges[i]);
         }
         emit BatchWithdrawRoyalties(lodges, royaltiesArray, _msgSender());

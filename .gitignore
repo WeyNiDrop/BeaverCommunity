@@ -2,3 +2,5 @@ node_modules
 artifacts
 .env
 typechain-types
+.vscode
+bin
