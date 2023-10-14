@@ -12,21 +12,21 @@ interface IBeaverCommunity {
     error CallFromOutside();
     error LodgeBlocked();
 
-    event NewLodge(uint256 indexed beaver, address indexed creator, uint64 indexed round, bool requireSubscribe,string content);
+    event NewLodge(uint256 indexed id, address indexed creator, uint64 indexed round, bool requireSubscribe, string content);
 
-    event NewComment(uint256 indexed beaver, address indexed creator, uint128 indexed commentIndex, uint128 replyComment, uint64 votes, string content);
+    event NewComment(uint256 indexed lodge, address indexed creator, uint128 indexed commentIndex, uint128 replyComment, uint64 votes, string content);
 
-    event VoteInCompetition(uint256 indexed beaver, address indexed sponsor, uint64 votes);
+    event VoteInCompetition(uint256 indexed lodge, address indexed sponsor, uint64 votes);
 
-    event VoteOutCompetition(uint256 indexed beaver, address indexed sponsor, uint64 votes);
+    event VoteOutCompetition(uint256 indexed lodge, address indexed sponsor, uint64 votes);
 
-    event WithdrawRewards(uint256 indexed beaver, uint256 indexed rewards, address indexed receiver);
+    event WithdrawRewards(uint256 indexed lodge, uint256 indexed rewards, address indexed receiver);
 
-    event BatchWithdrawRewards(uint256[] beaver, uint256[] rewards, address indexed receiver);
+    event BatchWithdrawRewards(uint256[] lodges, uint256[] rewards, address indexed receiver);
 
-    event WithdrawRoyalties(uint256 indexed beaver, uint256 indexed royalties, address indexed receiver);
+    event WithdrawRoyalties(uint256 indexed lodge, uint256 indexed royalties, address indexed receiver);
 
-    event BatchWithdrawRoyalties(uint256[] beaver, uint256[] royalties, address indexed receiver);
+    event BatchWithdrawRoyalties(uint256[] lodges, uint256[] royalties, address indexed receiver);
 
     function currentRound() external view returns(uint64);
 
