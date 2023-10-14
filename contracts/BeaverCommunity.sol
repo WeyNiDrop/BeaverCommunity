@@ -42,18 +42,18 @@ contract BeaverCommunity is IBeaverCommunity, AccessControlUpgradeable, Reentran
     mapping(uint256 => mapping(uint128 => LodgeStruct.Comment)) public commentMapping;
 
     // lodge => sponsor's address => votes
-    mapping(uint256 => mapping(address => uint64)) competitionVotesMapping;
-    mapping(uint256 => mapping(address => uint64)) extraVotesMapping;
+    mapping(uint256 => mapping(address => uint64)) public competitionVotesMapping;
+    mapping(uint256 => mapping(address => uint64)) public extraVotesMapping;
     // lodge => sponsor's address => rewards withdraw status
-    mapping(uint256 => mapping(address => bool)) rewardsStatusMapping;
+    mapping(uint256 => mapping(address => bool)) public rewardsStatusMapping;
     // lodge => royalties withdraw status
-    mapping(uint256 => bool) royaltiesStatusMapping;
+    mapping(uint256 => bool) public royaltiesStatusMapping;
 
     // subscription arguments
     // lodge => only subscriber look
-    mapping(uint256 => bool) subscriptionMapping;
+    mapping(uint256 => bool) public subscriptionMapping;
     // user => subscription price
-    mapping(address => uint64) subscriptionPriceMapping;
+    mapping(address => uint64) public subscriptionPriceMapping;
 
     
     function initialize(address lodgeERC721_, address woodCoin_, uint64 period_) public initializer {
