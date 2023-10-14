@@ -1215,8 +1215,8 @@
       ]
     },
     "/home/evan/Desktop/messagefi/lodge/contracts/BeaverCommunity.sol": {
-      "lastModificationDate": 1697256784020,
-      "contentHash": "43c5d4b83a90e91678f84f7e4402d55f",
+      "lastModificationDate": 1697265260748,
+      "contentHash": "b4934c366144faf1f337bfe4f485edfe",
       "sourceName": "contracts/BeaverCommunity.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -1260,8 +1260,8 @@
       ]
     },
     "/home/evan/Desktop/messagefi/lodge/contracts/interfaces/IBeaverCommunity.sol": {
-      "lastModificationDate": 1697244933826,
-      "contentHash": "4d5be9e1624b64ec98fa71ba611faaed",
+      "lastModificationDate": 1697260515582,
+      "contentHash": "499f1a02f2b4ded41697c271880dca67",
       "sourceName": "contracts/interfaces/IBeaverCommunity.sol",
       "solcConfig": {
         "version": "0.8.19",
