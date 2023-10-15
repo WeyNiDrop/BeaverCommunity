@@ -2,7 +2,7 @@ import { ethers, upgrades } from "hardhat";
 
 async function main() {
   const WoodERC20 = await ethers.getContractFactory("WoodERC20");
-  const wood = await WoodERC20.deploy("Wood Coin", "WC");
+  const wood = await WoodERC20.deploy("Wood Coin", "Wood");
   await wood.waitForDeployment();
   console.log("WoodERC20 deployed to:", await wood.getAddress());
 
@@ -13,7 +13,7 @@ async function main() {
   const BeaverCommunity = await ethers.getContractFactory("BeaverCommunity");
   const lodgeAddress: string = await lodge.getAddress();
   const woodAddress: string = await wood.getAddress();
-  const community = await upgrades.deployProxy(BeaverCommunity, [lodgeAddress, woodAddress, 96400]);
+  const community = await upgrades.deployProxy(BeaverCommunity, [lodgeAddress, woodAddress, 86400]);
   console.log("BeaverCommunity deployed to:", await community.getAddress());
 
   const COMMUNITY_ROLE = await lodge.COMMUNITY_ROLE();

@@ -1215,8 +1215,8 @@
       ]
     },
     "/home/evan/Desktop/messagefi/lodge/contracts/BeaverCommunity.sol": {
-      "lastModificationDate": 1697265260748,
-      "contentHash": "b4934c366144faf1f337bfe4f485edfe",
+      "lastModificationDate": 1697348052303,
+      "contentHash": "0f03bbc443532ea4571a25726403b855",
       "sourceName": "contracts/BeaverCommunity.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -1249,8 +1249,7 @@
         "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
         "./interfaces/IBeaverCommunity.sol",
         "./interfaces/ILodgeERC721.sol",
-        "./structs/LodgeStruct.sol",
-        "hardhat/console.sol"
+        "./structs/LodgeStruct.sol"
       ],
       "versionPragmas": [
         "^0.8.17"
@@ -1260,8 +1259,8 @@
       ]
     },
     "/home/evan/Desktop/messagefi/lodge/contracts/interfaces/IBeaverCommunity.sol": {
-      "lastModificationDate": 1697260515582,
-      "contentHash": "499f1a02f2b4ded41697c271880dca67",
+      "lastModificationDate": 1697347093841,
+      "contentHash": "ac8b2bdb22f62348bb542e5fbc18c6ff",
       "sourceName": "contracts/interfaces/IBeaverCommunity.sol",
       "solcConfig": {
         "version": "0.8.19",
