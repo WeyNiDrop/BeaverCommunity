@@ -13,7 +13,7 @@ async function main() {
   const BeaverCommunity = await ethers.getContractFactory("BeaverCommunity");
   const lodgeAddress: string = await lodge.getAddress();
   const woodAddress: string = await wood.getAddress();
-  const community = await upgrades.deployProxy(BeaverCommunity, [lodgeAddress, woodAddress, 86400]);
+  const community = await upgrades.deployProxy(BeaverCommunity, [lodgeAddress, woodAddress, 120]);
   console.log("BeaverCommunity deployed to:", await community.getAddress());
 
   const COMMUNITY_ROLE = await lodge.COMMUNITY_ROLE();

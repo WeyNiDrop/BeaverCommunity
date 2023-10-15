@@ -8,6 +8,10 @@ contract WoodERC20 is ERC20, Ownable {
 
     constructor(string memory name_, string memory symbol_) ERC20(name_, symbol_) {
     }
+
+    function decimals() public view virtual override returns (uint8) {
+        return 0;
+    }
     
     function mint(address community) external onlyOwner{
         

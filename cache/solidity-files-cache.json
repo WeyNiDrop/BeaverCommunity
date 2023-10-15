@@ -840,8 +840,8 @@
       ]
     },
     "/home/evan/Desktop/messagefi/lodge/contracts/WoodERC20.sol": {
-      "lastModificationDate": 1697257720591,
-      "contentHash": "59d22d1e36fba37431e30e59e04603b6",
+      "lastModificationDate": 1697358088818,
+      "contentHash": "19618bb50cd6cf23be087323dbdc642b",
       "sourceName": "contracts/WoodERC20.sol",
       "solcConfig": {
         "version": "0.8.19",

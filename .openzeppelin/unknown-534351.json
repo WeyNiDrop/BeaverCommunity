@@ -14,6 +14,16 @@
       "address": "0xd7c5c162F851C20b5Dd9dAb4186d3F59d598DBFE",
       "txHash": "0x3445acb21d403a9b2e05a0b67776049b0887c1c99acc5c70b008c1268a738d99",
       "kind": "transparent"
+    },
+    {
+      "address": "0xCcA85635C7E0a67a5EdA943e0BD02ee0d108a0dE",
+      "txHash": "0x26b17bfbbbf7c7e3f88b620ab39ef69477ee0959d4715a4a9338706e55c09cc1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A835ED238356Cf3BE47910bF19C3953D1BB81CF",
+      "txHash": "0x5b88eca2b9c3667331bf7040e151a41677e3c679fdcff06270355ee0cd558e7f",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -689,6 +699,440 @@
             "numberOfBytes": "96"
           },
           "t_struct(Competition)4383_storage": {
+            "label": "struct LodgeStruct.Competition",
+            "members": [
+              {
+                "label": "totalPopularity",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rewards",
+                "type": "t_uint128",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(RoleData)34_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint128": {
+            "label": "uint128",
+            "numberOfBytes": "16"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e311f0e4ebf329a69c75aba1ae3d32501135dfc88a6c0f58c560d53fc984c956": {
+      "address": "0xcD8D537B28D0cf2EAbA176a6Af0070dBB4107A37",
+      "txHash": "0xbff01e765d8ba3116ce19fde95c733103b4f3f2c0697fb9e3c72f95eca800c98",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "lodgeERC721",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(ILodgeERC721)4292",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:22"
+          },
+          {
+            "label": "woodCoin",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(IERC20Upgradeable)739",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:23"
+          },
+          {
+            "label": "totalLodges",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:24"
+          },
+          {
+            "label": "initTime",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:25"
+          },
+          {
+            "label": "period",
+            "offset": 8,
+            "slot": "204",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:26"
+          },
+          {
+            "label": "totaRewardslPool",
+            "offset": 16,
+            "slot": "204",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:27"
+          },
+          {
+            "label": "voteFeeRate",
+            "offset": 24,
+            "slot": "204",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:28"
+          },
+          {
+            "label": "rewardsFeeRate",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:29"
+          },
+          {
+            "label": "rateToCreator",
+            "offset": 8,
+            "slot": "205",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:30"
+          },
+          {
+            "label": "rewardsReduceRate",
+            "offset": 16,
+            "slot": "205",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:31"
+          },
+          {
+            "label": "rewardsReduceRound",
+            "offset": 24,
+            "slot": "205",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:32"
+          },
+          {
+            "label": "totalFee",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_uint64",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:33"
+          },
+          {
+            "label": "competitionMapping",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_mapping(t_uint64,t_struct(Competition)4308_storage)",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:36"
+          },
+          {
+            "label": "buildMapping",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_mapping(t_uint256,t_struct(Build)4303_storage)",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:39"
+          },
+          {
+            "label": "commentMapping",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_mapping(t_uint256,t_mapping(t_uint128,t_struct(Comment)4319_storage))",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:42"
+          },
+          {
+            "label": "competitionVotesMapping",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint64))",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:45"
+          },
+          {
+            "label": "extraVotesMapping",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint64))",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:46"
+          },
+          {
+            "label": "rewardsStatusMapping",
+            "offset": 0,
+            "slot": "212",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:48"
+          },
+          {
+            "label": "royaltiesStatusMapping",
+            "offset": 0,
+            "slot": "213",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:50"
+          },
+          {
+            "label": "subscriptionMapping",
+            "offset": 0,
+            "slot": "214",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:54"
+          },
+          {
+            "label": "subscriptionPriceMapping",
+            "offset": 0,
+            "slot": "215",
+            "type": "t_mapping(t_address,t_uint64)",
+            "contract": "BeaverCommunity",
+            "src": "contracts/BeaverCommunity.sol:56"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20Upgradeable)739": {
+            "label": "contract IERC20Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ILodgeERC721)4292": {
+            "label": "contract ILodgeERC721",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint64)": {
+            "label": "mapping(address => uint64)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint128,t_struct(Comment)4319_storage)": {
+            "label": "mapping(uint128 => struct LodgeStruct.Comment)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint64))": {
+            "label": "mapping(uint256 => mapping(address => uint64))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_uint128,t_struct(Comment)4319_storage))": {
+            "label": "mapping(uint256 => mapping(uint128 => struct LodgeStruct.Comment))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Build)4303_storage)": {
+            "label": "mapping(uint256 => struct LodgeStruct.Build)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint64,t_struct(Competition)4308_storage)": {
+            "label": "mapping(uint64 => struct LodgeStruct.Competition)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Build)4303_storage": {
+            "label": "struct LodgeStruct.Build",
+            "members": [
+              {
+                "label": "createTime",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "competitionVotes",
+                "type": "t_uint64",
+                "offset": 8,
+                "slot": "0"
+              },
+              {
+                "label": "extraVotes",
+                "type": "t_uint64",
+                "offset": 16,
+                "slot": "0"
+              },
+              {
+                "label": "totalComments",
+                "type": "t_uint64",
+                "offset": 24,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Comment)4319_storage": {
+            "label": "struct LodgeStruct.Comment",
+            "members": [
+              {
+                "label": "commentator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "replyComment",
+                "type": "t_uint128",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "createTime",
+                "type": "t_uint64",
+                "offset": 16,
+                "slot": "1"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint64",
+                "offset": 24,
+                "slot": "1"
+              },
+              {
+                "label": "content",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Competition)4308_storage": {
             "label": "struct LodgeStruct.Competition",
             "members": [
               {
