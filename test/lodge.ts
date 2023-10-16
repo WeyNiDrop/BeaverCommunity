@@ -40,11 +40,10 @@ describe("Lodge", function () {
     }
 
     async function waitSecond(time: number): Promise<void> {
-        // 使用 Promise 将 setTimeout 封装成异步操作
         return new Promise(resolve => {
           setTimeout(() => {
             resolve();
-          }, time * 1000); // 1000 毫秒即 1 秒
+          }, time * 1000); 
         });
     }
 
@@ -84,7 +83,6 @@ describe("Lodge", function () {
             await wood.approve(communityAddress, 1e9);
             await mint();
             var transaction = await community.build(false, "hello, world");
-            console.log("Start block: ", transaction.blockNumber);
             await mint();
             await printEvents("NewLodge", community, transaction);
             
